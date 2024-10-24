@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Floating Hardships - A digital sanctuary for sharing burdens and finding celestial solutions.">
+    <title>Heavenly Floating Hardships | Ascend Through Struggles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="bg-overlay" aria-hidden="true"></div>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="logo-container">
+                    <img src="images/profile.jpeg" alt="Floating Hardships Logo" class="logo" width="100" height="100">
+                    <h1>Floating Hardships</h1>
+                </div>
+                <p class="tagline">Ascend through struggles, find celestial solutions</p>
+            </div>
+
+            <div class="header-right">
+                <a href="#" id="home-icon" class="icon-btn" aria-label="Home" title="Home">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="#" id="about-icon" class="icon-btn" aria-label="About" title="About">
+                    <i class="fas fa-info-circle"></i>
+                </a>
+                <a href="#" id="contact-icon" class="icon-btn" aria-label="Contact" title="Contact">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section id="submit-hardship" class="submit-section">
+                <h2>Share Your Earthly Burden</h2>
+                <form id="hardship-form" class="hardship-form">
+                    <div class="input-container">
+                        <label for="hardship-input" class="visually-hidden">Describe your hardship</label>
+                        <textarea id="hardship-input" placeholder="Describe your hardship and let it float to the heavens..." required aria-describedby="char-count"></textarea>
+                        <div id="char-count" class="char-count" aria-live="polite">0 / 1000</div>
+                    </div>
+
+                    <!-- Enhanced Category Selection -->
+                    <div class="category-selection">
+                        <label for="category-select">Choose a category:</label>
+                        <select id="category-select" required>
+                            <option value="">Select a category</option>
+
+                            <!-- Mental & Emotional Well-being -->
+                            <optgroup label="Mental & Emotional Well-being">
+                                <option value="anxiety">Anxiety</option>
+                                <option value="depression">Depression</option>
+                                <option value="stress-burnout">Stress & Burnout</option>
+                                <option value="loneliness">Loneliness</option>
+                                <option value="grief-loss">Grief & Loss</option>
+                                <option value="self-esteem">Self-Esteem Issues</option>
+                                <option value="trauma">Trauma</option>
+                            </optgroup>
+
+                            <!-- Relationships -->
+                            <optgroup label="Relationships">
+                                <option value="family-issues">Family Issues</option>
+                                <option value="romantic-relationships">Romantic Relationships</option>
+                                <option value="friendship-problems">Friendship Problems</option>
+                                <option value="divorce-breakup">Divorce & Breakup</option>
+                                <option value="parenting">Parenting</option>
+                                <option value="conflict-resolution">Conflict Resolution</option>
+                            </optgroup>
+
+                            <!-- Work & Career -->
+                            <optgroup label="Work & Career">
+                                <option value="job-stress">Job Stress</option>
+                                <option value="work-life-balance">Work-Life Balance</option>
+                                <option value="career-uncertainty">Career Uncertainty</option>
+                                <option value="unemployment">Unemployment</option>
+                                <option value="workplace-conflict">Workplace Conflict</option>
+                                <option value="job-search">Job Search Struggles</option>
+                                <option value="career-growth">Career Growth</option>
+                            </optgroup>
+
+                            <!-- Education & School -->
+                            <optgroup label="Education & School">
+                                <option value="academic-pressure">Academic Pressure</option>
+                                <option value="bullying-harassment">Bullying & Harassment</option>
+                                <option value="peer-pressure">Peer Pressure</option>
+                                <option value="study-workload">Study Workload</option>
+                                <option value="exam-stress">Exam Stress</option>
+                                <option value="remote-learning-challenges">Remote Learning Challenges</option>
+                            </optgroup>
+
+                            <!-- Financial & Legal -->
+                            <optgroup label="Financial & Legal">
+                                <option value="financial-stress">Financial Stress</option>
+                                <option value="debt-management">Debt Management</option>
+                                <option value="housing-crisis">Housing Issues</option>
+                                <option value="legal-troubles">Legal Troubles</option>
+                                <option value="unemployment-benefits">Unemployment & Benefits</option>
+                            </optgroup>
+
+                            <!-- Health & Physical Well-being -->
+                            <optgroup label="Health & Physical Well-being">
+                                <option value="chronic-illness">Chronic Illness</option>
+                                <option value="disability">Living with Disability</option>
+                                <option value="physical-health-issues">Physical Health Issues</option>
+                                <option value="substance-abuse">Substance Abuse</option>
+                                <option value="addiction-recovery">Addiction Recovery</option>
+                            </optgroup>
+
+                            <!-- Social & Cultural Challenges -->
+                            <optgroup label="Social & Cultural Challenges">
+                                <option value="social-anxiety">Social Anxiety</option>
+                                <option value="cultural-barriers">Cultural Barriers</option>
+                                <option value="identity-struggles">Identity Struggles</option>
+                                <option value="discrimination">Discrimination & Bias</option>
+                                <option value="loneliness-isolation">Loneliness & Isolation</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-feather" aria-hidden="true"></i> Release Your Burden
+                    </button>
+                </form>
+            </section>
+
+            <div class="filter-sort-container">
+                <label for="filter-select" class="visually-hidden">Filter hardships</label>
+                <select id="filter-select" class="filter-sort-select" aria-label="Filter hardships">
+                    <option value="all">All Hardships</option>
+                    <option value="personal">Personal</option>
+                    <option value="family">Family Issues</option>
+                    <option value="school">School</option>
+                    <option value="work">Work Related</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="sort-select" class="visually-hidden">Sort hardships</label>
+                <select id="sort-select" class="filter-sort-select" aria-label="Sort hardships">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
+                <button id="my-hardships-btn" class="filter-sort-select">My Submissions</button>
+            </div>
+
+            <section id="hardship-container" class="hardship-grid" aria-live="polite"></section>
+            <div class="pagination">
+                <button id="load-more" class="load-more-btn">Reveal More Hardships</button>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2024 Fazil~. All rights celestially reserved.</p>
+        </footer>
+    </div>
+
+    <!-- MODAL SECTION -->
+    <div id="modal-container" class="modal-container" aria-hidden="true">
+        <!-- Home Modal -->
+        <div id="home-modal" class="modal hidden">
+            <h2>Welcome to Heavenly Floating Hardships</h2>
+            <p>This is your sanctuary to share your burdens and find solace.</p>
+            <button id="close-home-modal">Close</button>
+        </div>
+
+        <!-- About Modal -->
+        <div id="about-modal" class="modal hidden">
+            <h2>About Us</h2>
+            <p>Heavenly Floating Hardships is a community-driven platform created to offer support and solutions to life's struggles.</p>
+            <button id="close-about-modal">Close</button>
+        </div>
+
+        <!-- Contact Modal -->
+        <div id="contact-modal" class="modal hidden">
+            <h2>Contact Us</h2>
+            <p>We are here to listen and help. Feel free to reach out to us at fazil.timedestiny@gmail.com</p>
+            <button id="close-contact-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
